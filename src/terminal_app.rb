@@ -1,16 +1,14 @@
 require('colorize')
 
-
-
   class Shoppinglists
   lists = {}
     
   while true
    puts "🍀 Menu 🍀"
-   puts "Press 1) To show the lists"
-   puts "Press 2) To add more lists"
-   puts "Press 3) To delete lists"
-   puts "Press 4) To split the bills"
+   puts "Press 1) To show the list"
+   puts "Press 2) To add more items"
+   puts "Press 3) To delete items"
+   puts "Press 4) To split the total price"
    puts "Press 5) To quit"
    puts " --------------- "
   
@@ -78,7 +76,8 @@ require('colorize')
     puts "🍴　One person: " + "$#{number.to_i / person.to_i}".green
     puts "👀　Remainder: " + "$#{number.to_i % person.to_i}".green
     rescue ZeroDivisionError
-    puts "ERROR: Please input a number.".red
+    puts "ERROR: Please put a number.".red
+    retry
     end
   
   when 5 
