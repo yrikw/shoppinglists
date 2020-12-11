@@ -6,6 +6,7 @@ require('colorize')
   lists = {}
     
   while true
+   puts "🍀 Menu 🍀"
    puts "Press 1) To show the lists"
    puts "Press 2) To add more lists"
    puts "Press 3) To delete lists"
@@ -88,7 +89,7 @@ require('colorize')
   
   end
     puts
-    puts "Press any key to go back to Menu"
+    puts "⏪ Press any key to go back to Menu"
     gets
     system "clear"
   end
