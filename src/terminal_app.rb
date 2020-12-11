@@ -4,40 +4,44 @@ require('colorize')
   lists = {}
     
   while true
-   puts "🍀 Menu 🍀"
+   puts " ------------------------------ "
+   puts "          🍀  Menu 🍀          "
+   puts " ------------------------------ "
    puts "Press 1) To show the list"
    puts "Press 2) To add more items"
    puts "Press 3) To delete items"
    puts "Press 4) To split the total price"
    puts "Press 5) To quit"
-   puts " --------------- "
+   puts " ------------------------------ "
   
    menu_input = gets.chomp.to_i
    system "clear"
   
    case menu_input
    when 1
-     puts "⭐️ Shopping Lists ⭐️"
+    puts "---------------------------------------------"
+     puts "          ⭐️ Shopping Lists ⭐️          "  
+     puts "---------------------------------------------"
      
      if number = lists.values.inject(:+)
-     puts "Number of items: #{lists.length}" + " / " + "Total Price: $#{number}"
+     puts "   Number of items: #{lists.length}" + " / " + "Total Price: $#{number}"
      puts
 
      elsif number == 0 or lists.length == 0
-     puts "Number of Lists: #{lists.length}" + " / " + "Total Price: $0"
+     puts "   Number of Lists: #{lists.length}" + " / " + "Total Price: $0"
      puts
 
      end
      
-     puts " --------------- ".yellow
+     puts "            --------------- ".yellow
      puts
   
      lists.each do |key, val|
-       puts "✔︎" + " " + "#{key} $#{val}"
+       puts "        ✔︎" + "   " + "#{key} $#{val}"
      end
 
      puts
-     puts " --------------- ".yellow
+     puts "            --------------- ".yellow
   
   when 2  
     puts "Q. What do you want to add?".light_blue
@@ -55,16 +59,16 @@ require('colorize')
       puts "Q. Which items do you want to delete?".light_blue
   
      begin
-     i = gets.chomp
+     deleteitem = gets.chomp
      
-     lists.fetch("#{i}")
+     lists.fetch("#{deleteitem}")
   
-     group = lists.delete("#{i}")
+     group = lists.delete("#{deleteitem}")
      puts
-     puts "#{i}".green + " is deleted in the list."
+     puts "#{deleteitem}".green + " is deleted in the list."
   
      rescue
-     puts "#{i} is not found in the list."
+     puts "#{deleteitem} is not found in the list."
      end
   
   when 4
