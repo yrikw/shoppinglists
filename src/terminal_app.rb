@@ -18,7 +18,7 @@ begin
   
    case menu_input
    when 1
-     puts "⭐️Shopping Lists ⭐️"
+     puts "⭐️ Shopping Lists ⭐️"
      
      if number = lists.values.inject(:+)
      puts "Number of Lists: #{lists.length}" + " / " + "Total Price: $#{number}"
@@ -67,8 +67,8 @@ begin
     person = gets
   
     puts
-    puts "🍴　One person: #{number.to_i / person.to_i}"
-    puts "👀　Remainder: #{number.to_i % person.to_i}"
+    puts "🍴　One person: $#{number.to_i / person.to_i}"
+    puts "👀　Remainder: $#{number.to_i % person.to_i}"
     rescue ZeroDivisionError
     puts "ERROR: Please input a number."
     end
