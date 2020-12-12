@@ -28,7 +28,7 @@ end
       puts "Number of items: #{lists.length}" + " / " + "Total Price: $#{number}"
       puts
   
-      elsif number == 0 or lists.length == 0
+      else number == 0 or lists.length == 0
       puts "Number of Lists: #{lists.length}" + " / " + "Total Price: $0"
       puts
       end
