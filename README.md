@@ -28,13 +28,13 @@ loops and conditional control structures
 - Consult with your educator to check your features are sufficient .
 - 300 words (approx. 100 words per feature)
 
-## Feature 1 ( Error handling )
+## Feature 1
 Feature 1 is Menu 4) To split the total price. When you select Menu 4), the application asks you how many people we want to share the total price. After you put the number of the people into the system, the system automatically calculates and shows the numbers. The numbers are how much we need to pay per a person and a remainder. If we put an alphabets or symbols when we put the number of the people, the application shows the error messages and says “ERROR: Please input a number” and let us to retry from asking us to put the number of people.
 
-## Feature 2 ( loops and conditional control structures )
+## Feature 2
 Feature 2 is the top menu which has five menu lists. When we select one of the menu, we go to the menu page and we do whatever we need which is like adding items or deleting items. For example, when you select the menu 1), we can see the lists which we made and there is a message in the bottom which says “Press any key to go back to Menu”. After we press any keys, we go back to the  top menu and we can select different menus. Wherever we are in the application, the application let us to go back to the top menu.
 
-## Feature 3 ( use of variables and the concept of variable scope )
+## Feature 3 
 Feature 3 is when we put the items or the prices in the application, it shows the result of the input and make a shopping list. We can add items in the menu 2) and delete the items in the menu 3). Once we save the items in the application, we can just use the name of items to add and delete it. wherever you are in the application, so it is easy to change the shopping lists many times. Also, the name of the item and the price are related together so if you delete the item, the price is also deleted too. 
 
 # Develop an outline of the user interaction and experience for the application.
