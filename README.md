@@ -58,7 +58,11 @@ If there is an unexpected error, the application shows “An unexpected error is
 - prioritise the implementation of different features, or checklist items within a feature
 - provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
 - Utilise a suitable project management platform to track this implementation plan
-Your checklists for each feature should have at least 5 items.
+- Your checklists for each feature should have at least 5 items.
+
+Trello Board
+<https://trello.com/b/0Utg0uUv/terminal-app>
+
 
 
 
