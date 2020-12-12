@@ -1,6 +1,7 @@
 require('colorize')
 
-$lists = {}
+@lists = {}
+@number = {}
 
 def shoppinglists
 puts "---------------------------------------------"
@@ -12,11 +13,11 @@ end
    puts shoppinglists
 
    def total
-      if number = $lists.values.inject(:+)
-      puts "  Number of items: #{$lists.length}" + " / " + "Total Price: $#{number}"
+      if @number = @lists.values.inject(:+)
+      puts "  Number of items: #{@lists.length}" + " / " + "Total Price: $#{@number}"
   
-      else number == 0 or $lists.length == 0
-      puts "   Number of Lists: #{$lists.length}" + " / " + "Total Price: $0"
+      else @number == 0 or @lists.length == 0
+      puts "   Number of Lists: #{@lists.length}" + " / " + "Total Price: $0"
       end
    end
    puts total
@@ -41,7 +42,7 @@ end
      puts "            --------------- ".yellow
      puts
      
-     $lists.each do |key, val|
+     @lists.each do |key, val|
        puts "             ✔︎" + "   " + "#{key} $#{val}"
      end
 
@@ -61,7 +62,7 @@ end
     
     puts
     puts "#{key}".green + " / " + "$#{val}".green + " is added to the list."
-    $lists.store(key, val)
+    @lists.store(key, val)
 
 
   
@@ -73,9 +74,9 @@ end
      begin
      deleteitem = gets.chomp
      
-     lists.fetch("#{deleteitem}")
+     @lists.fetch("#{deleteitem}")
   
-     group = lists.delete("#{deleteitem}")
+     @lists.delete("#{deleteitem}")
      puts
      puts "#{deleteitem}".green + " is deleted in the list."
   
@@ -88,10 +89,9 @@ end
     begin
     puts "Q. How many people?".light_blue
     person = gets.to_f
-　　
     puts
-    puts "🍴　One person: " + "$#{number.to_i / person.to_i}"
-    puts "👀　Remainder: " + "$#{number.to_i % person.to_i}"
+    puts "🍴　One person: " + "$#{@number.to_i / person.to_i}"
+    puts "👀　Remainder: " + "$#{@number.to_i % person.to_i}"
     rescue ZeroDivisionError
     puts "ERROR: Please put a number.".red
     retry
@@ -109,4 +109,3 @@ end
     gets
     system "clear"
   end
-  
