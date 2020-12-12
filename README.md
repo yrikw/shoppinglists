@@ -50,6 +50,8 @@ If there is an unexpected error, the application shows “An unexpected error is
 # Develop a diagram which describes the control flow of your application. Your diagram must:
 - show the workflow/logic and/or integration of the features in your application for each feature.
 - utilise a recognised format or set of conventions for a control flow diagram, such as UML.
+
+![diagram](docs/flowchart.png)
  
 # Develop an implementation plan which:
 - outlines how each feature will be implemented and a checklist of tasks for each feature
