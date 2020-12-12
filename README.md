@@ -71,3 +71,15 @@ Trello Board
 - steps to install the application
 - any dependencies required by the application to operate
 - any system/hardware requirements
+
+## How to install and start this application
+1. The users will need ruby installed on their computers.
+2. Download this repository to their local computers.
+3. Open Command-line Interface
+4. Open "src" folder: '''cd src''' 
+5. Run the app: ruby: '''ruby terminal_app.rb'''
+
+## System/hardware requirements for this application
+- Command-line Interface
+- Ruby
+- Ruby gems: "Bundler", "Colorize"
