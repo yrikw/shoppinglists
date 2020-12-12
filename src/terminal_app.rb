@@ -1,20 +1,32 @@
 require('colorize')
 
-lists = {}
+$lists = {}
 
-def title
+def shoppinglists
 puts "---------------------------------------------"
 puts "          ⭐️ Shopping Lists ⭐️          "  
 puts "---------------------------------------------"
 end
     
   while true
-   puts title
+   puts shoppinglists
+
+   def total
+      if number = $lists.values.inject(:+)
+      puts "  Number of items: #{$lists.length}" + " / " + "Total Price: $#{number}"
+  
+      else number == 0 or $lists.length == 0
+      puts "   Number of Lists: #{$lists.length}" + " / " + "Total Price: $0"
+      end
+   end
+   puts total
+
    puts "     Press 1) To show the list"
    puts "     Press 2) To add more items"
    puts "     Press 3) To delete items"
    puts "     Press 4) To split the total price"
    puts "     Press 5) To quit"
+   puts "     Press 6) To find items"
   
    menu_input = gets.chomp.to_i
    system "clear"
@@ -22,31 +34,24 @@ end
    case menu_input
    when 1
      
-     puts title
-     
-      if number = lists.values.inject(:+)
-      puts "Number of items: #{lists.length}" + " / " + "Total Price: $#{number}"
-      puts
-  
-      else number == 0 or lists.length == 0
-      puts "Number of Lists: #{lists.length}" + " / " + "Total Price: $0"
-      puts
-      end
-     
+     puts shoppinglists
+
+     puts total
+
      puts "            --------------- ".yellow
      puts
-  
-     lists.each do |key, val|
-       puts "        ✔︎" + "   " + "#{key} $#{val}"
+     
+     $lists.each do |key, val|
+       puts "             ✔︎" + "   " + "#{key} $#{val}"
      end
 
      puts
      puts "            --------------- ".yellow
-
-     
-    
+       
   when 2  
-    puts title
+    puts shoppinglists
+    puts total
+
     puts "Q. What do you want to add?".light_blue
     key = gets.chomp
     
@@ -56,10 +61,13 @@ end
     
     puts
     puts "#{key}".green + " / " + "$#{val}".green + " is added to the list."
-    lists.store(key, val)
+    $lists.store(key, val)
+
+
   
   when 3 
-    puts title
+    puts shoppinglists
+    puts total
     puts "Q. Which items do you want to delete?".light_blue
   
      begin
@@ -76,11 +84,11 @@ end
      end
   
   when 4
-    puts title
+    puts shoppinglists
     begin
     puts "Q. How many people?".light_blue
     person = gets.to_f
-
+　　
     puts
     puts "🍴　One person: " + "$#{number.to_i / person.to_i}"
     puts "👀　Remainder: " + "$#{number.to_i % person.to_i}"
@@ -91,7 +99,7 @@ end
   
   when 5 
     exit
-  
+
   else
      puts "Choose  1 to 5.".red
   
