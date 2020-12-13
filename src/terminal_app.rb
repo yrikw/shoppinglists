@@ -1,5 +1,6 @@
 require('colorize')
 
+begin
 @lists = {}
 @number = {}
 
@@ -17,7 +18,7 @@ end
       puts "  Number of items: #{@lists.length}" + " / " + "Total Price: $#{@number}"
   
       else @number == 0 or @lists.length == 0
-      puts "   Number of Lists: #{@lists.length}" + " / " + "Total Price: $0"
+      puts "   Number of items: #{@lists.length}" + " / " + "Total Price: $0"
       end
    end
    puts total
@@ -27,7 +28,6 @@ end
    puts "     Press 3) To delete items"
    puts "     Press 4) To split the total price"
    puts "     Press 5) To quit"
-   puts "     Press 6) To find items"
   
    menu_input = gets.chomp.to_i
    system "clear"
@@ -54,21 +54,26 @@ end
     puts total
 
     puts "Q. What do you want to add?".light_blue
-    key = gets.chomp
+    keys = gets.chomp
     
     puts
     puts "Q. How much is the price?".light_blue
-    val = gets.to_f
+    values = gets.to_f
     
     puts
-    puts "#{key}".green + " / " + "$#{val}".green + " is added to the list."
-    @lists.store(key, val)
+    puts "#{keys}".green + " / " + "$#{values}".green + " is added to the list."
+
+    addnew = {}
+    @lists.merge!(addnew)
+
+    end
 
 
-  
   when 3 
+    
     puts shoppinglists
     puts total
+
     puts "Q. Which items do you want to delete?".light_blue
   
      begin
@@ -83,9 +88,15 @@ end
      rescue
      puts "#{deleteitem} is not found in the list."
      end
+
+    end
+
+     
   
   when 4
     puts shoppinglists
+    puts total
+
     begin
     puts "Q. How many people?".light_blue
     person = gets.to_f
@@ -109,3 +120,7 @@ end
     gets
     system "clear"
   end
+
+rescue
+  puts "Unexpeted error is occurred."
+end
