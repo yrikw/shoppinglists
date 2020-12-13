@@ -1,16 +1,22 @@
 require('colorize')
+require('httparty')
+require('tty-prompt')
 
-begin
+prompt = TTY::Prompt.new
+
 @lists = {}
 @number = {}
 
-def shoppinglists
-puts "---------------------------------------------"
-puts "          ⭐️ Shopping Lists ⭐️          "  
-puts "---------------------------------------------"
-end
+
+
     
   while true
+    def shoppinglists
+      puts "---------------------------------------------"
+      puts "          ⭐️ Shopping Lists ⭐️          "  
+      puts "---------------------------------------------"
+      end
+
    puts shoppinglists
 
    def total
@@ -28,6 +34,7 @@ end
    puts "     Press 3) To delete items"
    puts "     Press 4) To split the total price"
    puts "     Press 5) To quit"
+   puts "     Press 6) To find items"
   
    menu_input = gets.chomp.to_i
    system "clear"
@@ -66,8 +73,6 @@ end
     addnew = {}
     @lists.merge!(addnew)
 
-    end
-
 
   when 3 
     
@@ -87,16 +92,10 @@ end
   
      rescue
      puts "#{deleteitem} is not found in the list."
-     end
-
-    end
-
-     
+     end     
   
   when 4
     puts shoppinglists
-    puts total
-
     begin
     puts "Q. How many people?".light_blue
     person = gets.to_f
@@ -120,7 +119,3 @@ end
     gets
     system "clear"
   end
-
-rescue
-  puts "Unexpeted error is occurred."
-end
