@@ -1,12 +1,7 @@
-# Provide a link to your source control repository
+#Link to my source control repository
 <https://github.com/yrikw/shoppinglists/tree/main>
 
-# Develop a statement of purpose and scope for your application. It must include:
--  describe at a high level what the application will do
--  identify the problem it will solve and explain why you are developing it
-- identify the target audience
-- explain how a member of the target audience will use it
--   300 - 500words
+# Purpose and scope for this application.
 
 The application I created is “Shopping Lists”. The users can save what they need to buy or what they bought. There is a function they can put the price and the application automatically calculate the total price without a manual calculation. There are five menus. 1) To show the lists, 2) To add items to the lists, 3) To delete the items, 4) To split the total price and 5) To quit. It is very easy to add items or delete items. This application has a function to split the price. 
 
@@ -17,17 +12,7 @@ The target audience is someone who doesn’t need a various functions and elderl
 The target audience make a list with this application before they go to shop. It is very easy to use this application. They just need to follow the top menus and answer the questions. After they shop something, they can delete items or update items.  There is a menu who want to divide the total price with their friends or family, this application has a function to split the total price. 
 
 
-# Develop a list of features that will be included in the application. It must include:
-- at least THREE features
-- describe each feature
-
-Note: Ensure that your features above allow you to demonstrate your understanding of the following language elements and concepts:
-- use of variables and the concept of variable scope 
-loops and conditional control structures
- error handling
-- Consult with your educator to check your features are sufficient .
-- 300 words (approx. 100 words per feature)
-
+# Features
 ## Feature 1
 Feature 1 is Menu 4) To split the total price. When you select Menu 4), the application asks you how many people we want to share the total price. After you put the number of the people into the system, the system automatically calculates and shows the numbers. The numbers are how much we need to pay per a person and a remainder. If we put an alphabets or symbols when we put the number of the people, the application shows the error messages and says “ERROR: Please input a number” and let us to retry from asking us to put the number of people.
 
@@ -38,36 +23,75 @@ Feature 2 is the top menu which has five menu lists. When we select one of the m
 Feature 3 is when we put the items or the prices in the application, it shows the result of the input and make a shopping list. We can add items in the menu 2) and delete the items in the menu 3). Once we save the items in the application, we can just use the name of items to add and delete it. wherever you are in the application, so it is easy to change the shopping lists many times. Also, the name of the item and the price are related together so if you delete the item, the price is also deleted too. 
 
 # Develop an outline of the user interaction and experience for the application.
-Your outline must include:
-- how the user will find out how to interact with / use each feature
-- how the user will interact with / use each feature
-how errors will be handled by the application and displayed to the user
-No word count
+## How to find features
+After the user starts the app, below top menu shows up.
+The user needs to select the menu depending on what they want to do.
 
-The user can easily find how to use feature. Top menu lists shows what you can do and select the number from 1 to 5. The application always ask you the question. For example, “What item do you want to add?” or “Press any key to go back to top menu.”, so the user just need to follow the questions and guidance.  
+1. To show the lists
+2. To add items
+3. To delete items
+4. To split the total price
+5. Quit
+
+## How to interecat with / use each features
+Once he user selects menu, questions comes up and the user just need to answer the question.
+The application will add, delete or calculate by users answer and show messages. 
+
+2.  Q1 Which item do you want to add?
+    Q2 How much is the price
+3.  Q1 Which item do you want to delete?
+4.  How many people?
+ 
+## Error handling
 If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet accidentally, the application let them know “Put the numbers.” and asks the same question again until they put any numbers.
 
-# Develop a diagram which describes the control flow of your application. Your diagram must:
-- show the workflow/logic and/or integration of the features in your application for each feature.
-- utilise a recognised format or set of conventions for a control flow diagram, such as UML.
+# Develop a diagram which describes the control flow of your application. 
 
 ![diagram](docs/flowchart.png)
  
 # Develop an implementation plan which:
-- outlines how each feature will be implemented and a checklist of tasks for each feature
-- prioritise the implementation of different features, or checklist items within a feature
-- provide a deadline, duration or other time indicator for each feature or checklist/checklist-item
-- Utilise a suitable project management platform to track this implementation plan
-- Your checklists for each feature should have at least 5 items.
 
 Trello Board
 <https://trello.com/b/0Utg0uUv/terminal-app>
 
+## Feature 1
+- Show total items
+- Lists items
+- Check if the calculation works without error
+- Organize the design of the lists
+- Show Total price
 
+## Feature 2
+- Ask a  Question (Item name)
+- Gets input (Item name, price)
+- Show the message "(item) is added.
+- Ask a question(the price)
+- Show total number
 
+## Feature 3
+- Ask question (Which itme)
+- Write a code for error handling
+- Check if the item is deleted
+- Show the message "(item) is deleted."
+- Show the message "(item) is not in the lists" 
 
+## Feature 4
+- Calculate the price per person
+- Calculate the remainder
+- Ask a question (how many people)
+- Write a code for error handling (If the user puts alphabet instead of number)
+- Loop until the user puts number
 
-# Design help documentation which includes a set of instructions which accurately describe how to use and install the application.You must include:
+![Test1](docs/Label.png)
+
+## Feature 5
+- Write a error message "Choose menu 1 to 5"
+- Add system clear
+- Loop menu
+- Show menu lists
+- Quit menu / Show the message
+
+# How to use and install the application
 - steps to install the application
 - any dependencies required by the application to operate
 - any system/hardware requirements
@@ -83,4 +107,11 @@ Trello Board
 ## System/hardware requirements for this application
 - Command-line Interface
 - Ruby
-- Ruby gems: "Bundler", "Colorize"
+- Ruby gems: "Bundler", "Colorize", "artii"
+
+# Manual Test code 
+※Actaual code is in src folder / terminal_app_test.rb
+![Test1](./docs/Test1.png)
+![Test2](./docs/Test2.png)
+![Test3](./docs/Test3.png)
+
