@@ -25,13 +25,25 @@ Feature 3 is when we put the items or the prices in the application, it shows th
 
 # Develop an outline of the user interaction and experience for the application.
 Your outline must include:
-- how the user will find out how to interact with / use each feature
-- how the user will interact with / use each feature
-how errors will be handled by the application and displayed to the user
-- No word count
+- How to find features
+After the user starts the app, below top menu shows up.
+The user needs to select the menu depending on what they want to do.
 
-The user can easily find how to use feature. Top menu lists shows what you can do and select the number from 1 to 5. The application always ask you the question. For example, “What item do you want to add?” or “Press any key to go back to top menu.”, so the user just need to follow the questions and guidance.  
+To show the lists
+To add items
+To delete items
+4,   To split the total price
+5.   Quit
 
+- How to interecat with / use each features
+Once he user selects menu, questions comes up and the user just need to answer the question.
+The application will add, delete or calculate by users answer and show messages. 
+
+2.  Q1 Which item do you want to add?
+    Q2 How much is the price
+3.  Q1 Which item do you want to delete?
+4.  How many people?
+ 
 - Error handling
 If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet accidentally, the application let them know “Put the numbers.” and asks the same question again until they put any numbers.
 
