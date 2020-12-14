@@ -24,17 +24,17 @@ Feature 2 is the top menu which has five menu lists. When we select one of the m
 Feature 3 is when we put the items or the prices in the application, it shows the result of the input and make a shopping list. We can add items in the menu 2) and delete the items in the menu 3). Once we save the items in the application, we can just use the name of items to add and delete it. wherever you are in the application, so it is easy to change the shopping lists many times. Also, the name of the item and the price are related together so if you delete the item, the price is also deleted too. 
 
 # Develop an outline of the user interaction and experience for the application.
-- How to find features
+## How to find features
 After the user starts the app, below top menu shows up.
 The user needs to select the menu depending on what they want to do.
 
-To show the lists
-To add items
-To delete items
-4,   To split the total price
-5.   Quit
+1. To show the lists
+2. To add items
+3. To delete items
+4. To split the total price
+5. Quit
 
-- How to interecat with / use each features
+## How to interecat with / use each features
 Once he user selects menu, questions comes up and the user just need to answer the question.
 The application will add, delete or calculate by users answer and show messages. 
 
@@ -43,7 +43,7 @@ The application will add, delete or calculate by users answer and show messages.
 3.  Q1 Which item do you want to delete?
 4.  How many people?
  
-- Error handling
+## Error handling
 If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet accidentally, the application let them know “Put the numbers.” and asks the same question again until they put any numbers.
 
 # Develop a diagram which describes the control flow of your application. 
@@ -55,35 +55,35 @@ If there is an unexpected error, the application shows “An unexpected error is
 Trello Board
 <https://trello.com/b/0Utg0uUv/terminal-app>
 
-### Feature 1
+## Feature 1
 - Show total items
 - Lists items
 - Check if the calculation works without error
 - Organize the design of the lists
 - Show Total price
 
-### Feature 2
+## Feature 2
 - Ask a  Question (Item name)
 - Gets input (Item name, price)
 - Show the message "(item) is added.
 - Ask a question(the price)
 - Show total number
 
-### Feature 3
+## Feature 3
 - Ask question (Which itme)
 - Write a code for error handling
 - Check if the item is deleted
 - Show the message "(item) is deleted."
 - Show the message "(item) is not in the lists" 
 
-### Feature 4
+## Feature 4
 - Calculate the price per person
 - Calculate the remainder
 - Ask a question (how many people)
 - Write a code for error handling (If the user puts alphabet instead of number)
 - Loop until the user puts number
 
-### Feature 5
+## Feature 5
 - Write a error message "Choose menu 1 to 5"
 - Add system clear
 - Loop menu
