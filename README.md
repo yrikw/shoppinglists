@@ -111,7 +111,7 @@ Trello Board
 
 # Manual Test code 
 ※Actaual code is in src folder / terminal_app_test.rb
-![Test1](docs/Test1.png)
-![Test2](docs/Test2.png)
-![Test3](docs/Test3.png)
+![Test1](./docs/Test1.png)
+![Test2](./docs/Test2.png)
+![Test3](./docs/Test3.png)
 
