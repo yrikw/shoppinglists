@@ -1,7 +1,7 @@
 #Link to my source control repository
 <https://github.com/yrikw/shoppinglists/tree/main>
 
-# Develop a statement of purpose and scope for your application. It must include:
+# Purpose and scope for this application.
 
 The application I created is “Shopping Lists”. The users can save what they need to buy or what they bought. There is a function they can put the price and the application automatically calculate the total price without a manual calculation. There are five menus. 1) To show the lists, 2) To add items to the lists, 3) To delete the items, 4) To split the total price and 5) To quit. It is very easy to add items or delete items. This application has a function to split the price. 
 
@@ -13,7 +13,6 @@ The target audience make a list with this application before they go to shop. It
 
 
 # Features
-
 ## Feature 1
 Feature 1 is Menu 4) To split the total price. When you select Menu 4), the application asks you how many people we want to share the total price. After you put the number of the people into the system, the system automatically calculates and shows the numbers. The numbers are how much we need to pay per a person and a remainder. If we put an alphabets or symbols when we put the number of the people, the application shows the error messages and says “ERROR: Please input a number” and let us to retry from asking us to put the number of people.
 
@@ -83,6 +82,8 @@ Trello Board
 - Write a code for error handling (If the user puts alphabet instead of number)
 - Loop until the user puts number
 
+![Test1](docs/Label.png)
+
 ## Feature 5
 - Write a error message "Choose menu 1 to 5"
 - Add system clear
@@ -108,4 +109,9 @@ Trello Board
 - Ruby
 - Ruby gems: "Bundler", "Colorize", "artii"
 
-# Manual Test code
+# Manual Test code 
+※Actaual code is in src folder / terminal_app_test.rb
+![Test1](docs/Test1.png)
+![Test2](docs/Test2.png)
+![Test3](docs/Test3.png)
+
