@@ -42,9 +42,11 @@ Your outline must include:
 - how the user will find out how to interact with / use each feature
 - how the user will interact with / use each feature
 how errors will be handled by the application and displayed to the user
-No word count
+- No word count
 
 The user can easily find how to use feature. Top menu lists shows what you can do and select the number from 1 to 5. The application always ask you the question. For example, “What item do you want to add?” or “Press any key to go back to top menu.”, so the user just need to follow the questions and guidance.  
+
+- Error handling
 If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet accidentally, the application let them know “Put the numbers.” and asks the same question again until they put any numbers.
 
 # Develop a diagram which describes the control flow of your application. Your diagram must:
@@ -63,8 +65,43 @@ If there is an unexpected error, the application shows “An unexpected error is
 Trello Board
 <https://trello.com/b/0Utg0uUv/terminal-app>
 
+1. Feature 1
+- Show total items
+- Lists items
+- Check if the calculation works without error
+- Organize the design of the lists
+- Show Total price
+
+2. Feature 2
+- Ask a  Question (Item name)
+- Gets input (Item name, price)
+- Show the message "(item) is added.
+- Ask a question(the price)
+-
 
 
+3. Feature 3
+-
+-
+-
+-
+-
+
+
+4. Feature 4
+-
+-
+-
+-
+-
+
+
+5. Feature 5
+-
+-
+-
+-
+-
 
 
 # Design help documentation which includes a set of instructions which accurately describe how to use and install the application.You must include:
@@ -83,4 +120,4 @@ Trello Board
 ## System/hardware requirements for this application
 - Command-line Interface
 - Ruby
-- Ruby gems: "Bundler", "Colorize"
+- Ruby gems: "Bundler", "Colorize", "artii"
