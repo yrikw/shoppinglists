@@ -24,7 +24,6 @@ Feature 2 is the top menu which has five menu lists. When we select one of the m
 Feature 3 is when we put the items or the prices in the application, it shows the result of the input and make a shopping list. We can add items in the menu 2) and delete the items in the menu 3). Once we save the items in the application, we can just use the name of items to add and delete it. wherever you are in the application, so it is easy to change the shopping lists many times. Also, the name of the item and the price are related together so if you delete the item, the price is also deleted too. 
 
 # Develop an outline of the user interaction and experience for the application.
-Your outline must include:
 - How to find features
 After the user starts the app, below top menu shows up.
 The user needs to select the menu depending on what they want to do.
