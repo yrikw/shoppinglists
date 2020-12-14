@@ -46,7 +46,7 @@ The application will add, delete or calculate by users answer and show messages.
 - Error handling
 If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet accidentally, the application let them know “Put the numbers.” and asks the same question again until they put any numbers.
 
-# Develop a diagram which describes the control flow of your application. Your diagram must:
+# Develop a diagram which describes the control flow of your application. 
 
 ![diagram](docs/flowchart.png)
  
@@ -55,42 +55,42 @@ If there is an unexpected error, the application shows “An unexpected error is
 Trello Board
 <https://trello.com/b/0Utg0uUv/terminal-app>
 
-1. Feature 1
+### Feature 1
 - Show total items
 - Lists items
 - Check if the calculation works without error
 - Organize the design of the lists
 - Show Total price
 
-2. Feature 2
+### Feature 2
 - Ask a  Question (Item name)
 - Gets input (Item name, price)
 - Show the message "(item) is added.
 - Ask a question(the price)
 - Show total number
 
-3. Feature 3
+### Feature 3
 - Ask question (Which itme)
 - Write a code for error handling
 - Check if the item is deleted
 - Show the message "(item) is deleted."
 - Show the message "(item) is not in the lists" 
 
-4. Feature 4
+### Feature 4
 - Calculate the price per person
 - Calculate the remainder
 - Ask a question (how many people)
 - Write a code for error handling (If the user puts alphabet instead of number)
 - Loop until the user puts number
 
-5. Feature 5
+### Feature 5
 - Write a error message "Choose menu 1 to 5"
 - Add system clear
 - Loop menu
 - Show menu lists
 - Quit menu / Show the message
 
-# Design help documentation which includes a set of instructions which accurately describe how to use and install the application.You must include:
+# How to use and install the application
 - steps to install the application
 - any dependencies required by the application to operate
 - any system/hardware requirements
@@ -107,3 +107,5 @@ Trello Board
 - Command-line Interface
 - Ruby
 - Ruby gems: "Bundler", "Colorize", "artii"
+
+# Manual Test code
