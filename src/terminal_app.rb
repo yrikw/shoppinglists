@@ -22,16 +22,16 @@ $artii = {}
 
    def total
       if @number = @lists.values.inject(:+)
-      puts "  Number of items: #{@lists.length}" + " / " + "Total Price: $#{@number}"
+      puts "  Total items: #{@lists.length}" + " / " + "Total Price: $#{@number}"
   
       else @number == 0 or @lists.length == 0
-      puts "   Number of items: #{@lists.length}" + " / " + "Total Price: $0"
+      puts "   Total items: #{@lists.length}" + " / " + "Total Price: $0"
       end
    end
    puts total
 
    puts "     Press 1) To show the list"
-   puts "     Press 2) To add more items"
+   puts "     Press 2) To add items"
    puts "     Press 3) To delete items"
    puts "     Press 4) To split the total price"
    puts "     Press 5) To quit"
@@ -108,7 +108,7 @@ $artii = {}
   when 4
     puts shoppinglists
 
-    puts "              Share the bills".light_blue.bold
+    puts "              Share".light_blue.bold
 
     begin
     puts "Q. How many people?"
@@ -122,14 +122,15 @@ $artii = {}
     end
   
   when 5 
-    exit
-
+   puts  @a.asciify('Enjoy')
+   puts  @a.asciify('Shopping!')
+   exit
   else
      puts "Choose  1 to 5.".red
   
   end
     puts
-    puts "⏪ " + "Press any key to go back to Menu".blink
+    puts "⏪ " + "Press any key to go back to Top menu".blink
     gets
     system "clear"
   end
