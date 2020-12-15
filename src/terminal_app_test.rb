@@ -76,16 +76,14 @@ while true
 
 # Test case 3 ( def method )
 
-def title
-    puts "---------------------------------------------"
-    puts "          ⭐️ Shopping Lists ⭐️          "  
-    puts "---------------------------------------------"
-end
+@lists = {"banana" => 80}
 
-puts title
+    def total
+        @number = @lists.values.inject(:+)
+        puts "  Total items: #{@lists.length}" + " / " + "Total Price: $#{@number}"
+    end
 
-#expected result 
-# "---------------------------------------------"
-# "          ⭐️ Shopping Lists ⭐️          "  
-# "---------------------------------------------"
+    puts total
 
+    #expected result
+    #Total items: 1 / Total Price: $80
