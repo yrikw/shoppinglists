@@ -37,8 +37,7 @@ The user needs to select the menu depending on what they want to do.
 Once he user selects menu, questions comes up and the user just need to answer the question.
 The application will add, delete or calculate by users answer and show messages. 
 
-2.  Q1 Which item do you want to add?
-    Q2 How much is the price
+2.  Q1 Which item do you want to add? / Q2 How much is the price
 3.  Q1 Which item do you want to delete?
 4.  How many people?
  
@@ -82,14 +81,14 @@ Trello Board
 - Write a code for error handling (If the user puts alphabet instead of number)
 - Loop until the user puts number
 
-![Test1](docs/Label.png)
-
 ## Feature 5
 - Write a error message "Choose menu 1 to 5"
 - Add system clear
 - Loop menu
 - Show menu lists
 - Quit menu / Show the message
+
+![Test1](docs/Label.png)
 
 # How to use and install the application
 - steps to install the application
