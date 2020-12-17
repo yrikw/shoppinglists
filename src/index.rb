@@ -4,6 +4,7 @@ require('httparty')
 require('tty-prompt')
 require('artii')
 
+begin
 prompt = TTY::Prompt.new
 @a = Artii::Base.new
 
@@ -22,12 +23,11 @@ $artii = {}
   
    case @answer
    when "1) Check the list"
-     
      shoppinglists
      total
      menu1
        
-  when "2) Add itmes"  
+  when "2) Add items"  
     shoppinglists
     total
     menu2
@@ -51,3 +51,6 @@ $artii = {}
     gets
     system "clear"
   end
+rescue 
+  puts"Unexpected error is occured."
+end

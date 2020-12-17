@@ -2,7 +2,7 @@ require('tty-prompt')
 @prompt = TTY::Prompt.new
 
 def menu_input_select
-@answer = @prompt.select("TOP MENU",["1) Check the list", "2) Add itmes", "3) Delete items", "4) Share the bills", "5) Quit"])
+@answer = @prompt.select("TOP MENU",["1) Check the list", "2) Add items", "3) Delete items", "4) Share the bills", "5) Quit"])
 end
 
 
