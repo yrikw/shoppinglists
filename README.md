@@ -88,7 +88,9 @@ Trello Board
 - Show menu lists
 - Quit menu / Show the message
 
-![Test1](docs/Label.png)
+![label](docs/Label.png)
+![Trello1](docs/Trello1.png)
+![Trello2](docs/Trello2.png)
 
 # How to use and install the application
 - steps to install the application
