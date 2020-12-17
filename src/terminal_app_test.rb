@@ -17,7 +17,7 @@ begin
 end
 
 #expected result  => passed
-# 🍴　One person: $2
+# 🍴　One person: $10
 # 👀　Remainder: 0
 
 # if person gets alphabet
@@ -32,6 +32,9 @@ begin
     puts "ERROR: Please put a number."
     retry
 end
+
+#expcetd result => passed
+# Shows "ERROR: Please put a number."
 
 # Test Case 2 ( loop )
 while true
