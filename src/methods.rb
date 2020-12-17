@@ -1,11 +1,8 @@
+require('tty-prompt')
+@prompt = TTY::Prompt.new
+
 def menu_input_select
-     puts "     Press 1) To show the list"
-     puts "     Press 2) To add items"
-     puts "     Press 3) To delete items"
-     puts "     Press 4) To split the total price"
-     puts "     Press 5) To quit"
-     input = gets.chomp.to_i
-    return input
+@answer = @prompt.select("TOP MENU",["1) Check the list", "2) Add itmes", "3) Delete items", "4) Share the bills", "5) Quit"])
 end
 
 
@@ -97,7 +94,7 @@ def menu3
 end
 
 def menu5
-    puts  @a.asciify('Enjoy').green
+    puts  @a.asciify('Enjoy').light_blue
     puts  @a.asciify('Shopping!').magenta
     exit
 end
