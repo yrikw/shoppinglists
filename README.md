@@ -108,7 +108,7 @@ Trello Board
 ## System/hardware requirements for this application
 - Command-line Interface
 - Ruby
-- Ruby gems: "Bundler", "Colorize", "artii"
+- Ruby gems: "Bundler", "Colorize", "artii", "tty-prompt"
 
 # Manual Test code 
 ※Actaual code is in src folder / terminal_app_test.rb
