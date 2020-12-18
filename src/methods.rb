@@ -5,6 +5,12 @@ def menu_input_select
 @answer = @prompt.select("TOP MENU",["1) Check the list", "2) Add items", "3) Delete items", "4) Share the bills", "5) Quit"])
 end
 
+def shoppinglists
+    puts "---------------------------------------------"
+    puts "          ⭐️ Shopping Lists ⭐️          ".bold
+    puts "---------------------------------------------"
+ end
+
 
 def total
     if @number = @lists.values.inject(:+)
@@ -15,12 +21,6 @@ def total
     puts "   Total items: #{@lists.length}" + " / " + "Total Price: $0"
     puts
     end
- end
-
- def shoppinglists
-    puts "---------------------------------------------"
-    puts "          ⭐️ Shopping Lists ⭐️          ".bold
-    puts "---------------------------------------------"
  end
 
  def menu1
