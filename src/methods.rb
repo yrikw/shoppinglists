@@ -2,6 +2,7 @@ require('tty-prompt')
 require('tty-box')
 
 @prompt = TTY::Prompt.new
+@argv = ARGV[0]
 
 def menu_input_select
 @answer = @prompt.select("TOP MENU",["1) Check the list", "2) Add items", "3) Delete items", "4) Share the bills", "5) Quit"])
@@ -9,7 +10,7 @@ end
 
 def shoppinglists
     box = TTY::Box.frame(width: 40, align: :center) do
-        "⭐️ Shopping Lists ⭐️"
+       @argv +  "'s ⭐️ Shopping Lists ⭐️"
     end
     print box
 end

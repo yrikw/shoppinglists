@@ -4,10 +4,9 @@ require('tty-prompt')
 require('artii')
 require('tty-box')
 
-begin
+#begin
 prompt = TTY::Prompt.new
 @a = Artii::Base.new
-
 
 @lists = {}
 @number = {}
@@ -47,9 +46,10 @@ $artii = {}
   end
     puts
     puts "⏪ " + "Press any key to go back to Top menu".blink
+    ARGV.clear
     gets
     system "clear"
   end
-rescue 
-puts "Unexpected error is occured."
-end
+#rescue 
+#puts "Unexpected error is occured."
+#end
