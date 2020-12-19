@@ -1,4 +1,6 @@
 require('tty-prompt')
+require('tty-box')
+
 @prompt = TTY::Prompt.new
 
 def menu_input_select
@@ -6,10 +8,11 @@ def menu_input_select
 end
 
 def shoppinglists
-    puts "---------------------------------------------"
-    puts "          ⭐️ Shopping Lists ⭐️          ".bold
-    puts "---------------------------------------------"
- end
+    box = TTY::Box.frame(width: 40, align: :center) do
+        "⭐️ Shopping Lists ⭐️"
+    end
+    print box
+end
 
 
 def total
@@ -40,6 +43,7 @@ end
      puts
      puts "            --------------- "
 end
+
 
 def menu2
     puts "              Add items".light_blue.bold
@@ -88,7 +92,9 @@ def menu3
     puts "🍴　One person: " + "$#{@number.to_i / person.to_i}".green.italic
     puts "👀　Remainder: " + "$#{@number.to_i % person.to_i}".green.italic
     rescue ZeroDivisionError
-    puts "ERROR: Please put a number.".red
+    box1 = TTY::Box.error("ERROR: Please enter a number.")
+    print box1
+    puts 
     retry
     end
 end

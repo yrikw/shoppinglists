@@ -1,8 +1,8 @@
 require_relative('./methods')
 require('colorize')
-require('httparty')
 require('tty-prompt')
 require('artii')
+require('tty-box')
 
 begin
 prompt = TTY::Prompt.new
@@ -14,7 +14,6 @@ prompt = TTY::Prompt.new
 $artii = {}
     
   while true
-
    shoppinglists
    total
    menu_input_select
@@ -23,7 +22,7 @@ $artii = {}
   
    case @answer
    when "1) Check the list"
-     shoppinglists
+    shoppinglists
      total
      menu1
        
@@ -52,5 +51,5 @@ $artii = {}
     system "clear"
   end
 rescue 
-  puts"Unexpected error is occured."
+puts "Unexpected error is occured."
 end
