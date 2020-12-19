@@ -3,24 +3,24 @@
 
 # Purpose and scope for this application.
 
-The application I created is “Shopping Lists”. The users can save as a list what they need to buy or what they bought. There is a function they can put the price and the application automatically calculate the total price without a manual calculation. There are five menus. 1) To show the lists, 2) To add items to the lists, 3) To delete the items, 4) To split the total price and 5) To quit. It is very easy to add items or delete items. 
+The purpose of "Shopping List" application is to allow users to save their shopping list and conveniently calculate total cost of their shopping items.
+Basically, users enter their shopping list along with the item cost then the application automatically calculate the total price. There are five menus. 1) To show the lists, 2) To add items to the lists, 3) To delete the items, 4) To split the total price and 5) To quit. It is very easy to add items or delete items. 
 
-One of the problem when we go to shopping is sometimes it causes that we forget to buy something we need or buy unnecessary items. If we make a shopping list, before we go shopping, it helps you to buy something financially and efficiency. It is very important to remind us what exactly we need to buy and to see how much we will spend. There are many applications to make shopping lists or manage our money, however I developed very simple and easy to use without any complicated settings. In my experience, I tried to use some applications but every time I need to understand the difficult settings, which makes me thinking to develop my own shopping list application.
+One of the problem when we go to shopping is that sometimes we forget to buy something we need or buy unnecessary items. If we make a shopping list before we go shopping, it helps you to buy things we actually need. Especially for someone like me who has a strict weekly budget, it is very helpful to know what exactly we need to buy and to see how much it will cost while I am shopping rather than realising I went over budget while at the checkout. There are many applications to make shopping lists or manage our money, however I developed very simple and easy to use without any complicated settings. In my experience, I tried to use some applications but every time I need to understand the difficult settings, which makes me thinking to develop my own shopping list application.
 
-The target audience is someone who doesn’t need a various functions and elderly people who isn't used to use complicated applications. Also, other people who just want to take a simple shopping memo. 
+The target audience is someone who doesn’t need a various functions such as elderly people who isn't used to use complicated applications. Also, other people who just want to take a simple shopping memo. 
 
-The target audience make a list with this application before they go to shop. It is very easy to use this application. They just need to select the top menu list and answer some questions or messages. After they shop something, they can delete items or update items.  There is a menu for the users who want to divide the total price with their friends or family, this application has a function to split the total price. 
-
+The target audience can make a list with this application before they go shopping with approximate cost of items to see if it is within their budget. Users just need to select the top menu list and answer some questions or messages. After they shop something, they can delete items or update items.  There is a menu for the users who want to divide the total price with their friends or family, this application has a function to split total bill. 
 
 # Features
 ## Feature 1
-Feature 1 is Menu 4) To split the total price. When the users select Menu 4), the application asks them how many people they want to share the total price. After they put the number of the people into the system, the system automatically calculates and shows the numbers. The numbers are how much they need to pay per a person and the remainder. If they put an alphabets or symbols instead of numbers when they put the number of the people, the application shows the error messages and says “ERROR: Please input a number” and let them to retry to put the number of people. I used ```begin``` and ```rescue``` for error handling, so if the application can not calculate because of the alphabet, the rescue would be excuted and shows the error message. 
+Feature 1 is Menu 4) To split the total price. When the users select Menu 4), the application asks them how many people they want to share the total price. After they put the number of the people into the system, the system automatically calculates and shows the divided bill per person. However, this application only able to show whole numbers so let's say the user wants to divide 10 dollars into 3 people, the application will show $3 each for 3 people and also remaining $1. If they put an alphabets or symbols instead of numbers when they put the number of the people, the application shows the error messages and says “ERROR: Please input a number” and let them to retry to put the number of people. I used ```begin``` and ```rescue``` for error handling, so if the application can not calculate because of the alphabet, the rescue would be excuted and shows the error message. 
 
 ## Feature 2
-Feature 2 is the top menu which has five menu lists. When the user select one of the menu, they go to the menu page and they do whatever they need which is like adding items or deleting items. For example, if they select the menu 1), they can see the lists which they made and there is a message in the bottom which says “Press any key to go back to Menu”. After they press any keys, they go back to the top menu and they can select different menus. Wherever they are in the application, the application guides them to go back to the top menu. This loop menu helps the users to understand the structure of the application easily.  
+Feature 2 is the top menu which has five menu lists. When the user select one of the menu, they go to the menu page and they do whatever they need which is like adding items or deleting items. For example, if they select the menu 1), they can see the lists which they made and there is a message in the bottom which says “Press any key to go back to Menu”. After they press any keys, they can go back to the top menu and they can select different menus. Wherever they are in the application, the application guides them to go back to the top menu. This loop menu helps the users to understand the structure of the application easily.  
 
 ## Feature 3 
-Feature 3 is when the users put the item names or the prices in the application, it shows the result of the input and make a shopping list. They can add items in the menu 2) and delete the items in the menu 3). Once they put the items in the application, they can just use the name of the items to add and delete it later wherever they are in the application, since I used variable for that, so it is easy to change the shopping list anytime. Also, the name of the item and the price are related together so if they delete the item, the price is also deleted too. The application gets the item name and the price using by ```gets = itemname ``` and I used  ```puts method name``` to output the result. 
+Feature 3 is when the users put the item names and the prices in the application. It shows the result of the input and make a shopping list. They can add items in the menu 2) and delete the items in the menu 3). Once they enter list of items in the application, they can just use the name of the items to add and delete it later wherever they are in the application, since I used variable for that, so it is easy to change the shopping list anytime. Also, the name of the item and the price are related together so if they delete the item, the price is also deleted too. The application gets the item name and the price using by ```gets = itemname ``` and I used  ```puts method name``` to output the result. 
 
 # Develop an outline of the user interaction and experience for the application.
 ## How the user will find out how to interact with / use each feature
@@ -33,15 +33,15 @@ After the user starts the application, below top menu shows up. The user needs t
 5. Quit
 
 ## How to interecat with / use each features
-Once he user selects menu, some questions come up and the user just need to answer the questions.
-The application will add, delete or calculate by user's answer and show messages. Also, if the user adds many items in the list, they just need to type the item name, which helps them efficiently to add and delete items instead of scrolling and searching items in the list. 
+Once the user selects menu, some questions come up and the user just need to answer the questions depending on what they need.
+The application will add, delete or calculate by user's answer and show a messages. Also, if the user adds many items in the list, they just need to type the item name, which helps them to efficiently add and delete items instead of scrolling and searching items in the list. 
 
 2.  Q1 Which item do you want to add? / Q2 How much is the price
 3.  Q1 Which item do you want to delete?
 4.  How many people?
  
 ## Error handling
-If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet insstead of numbers accidentally, the application let them know “Put the numbers.” and asks the same question again until they put any numbers. In menu 3) if the user try to delete the item which they have already deleted, the application also shows error message. The user can know easily what is the error. 
+If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet insstead of numbers accidentally, the application let them know “Enter a numbers.” and asks the same question again until they put any numbers. In menu 3) if the user try to delete the item which they have already deleted, the application also shows error message. The user can know easily what is the error. 
 
 # Develop a diagram which describes the control flow of your application. 
 
@@ -107,7 +107,7 @@ Trello Board
 ## System/hardware requirements for this application
 - Command-line Interface
 - Ruby
-- Ruby gems: "Bundler", "Colorize", "artii", "tty-prompt"
+- Ruby gems: "Bundler", "Colorize", "artii", "tty-prompt", "tty-box"
 
 # Manual Test code 
 ※Actaual code is in src folder / terminal_app_test.rb
