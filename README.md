@@ -1,5 +1,5 @@
 # Link to my source control repository
-<https://github.com/yrikw/shoppinglists/tree/main>
+<https://github.com/yrikw/shoppinglists>
 
 # Purpose and scope for this application.
 
