@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ruby terminal_app.rb
+ruby index.rb
