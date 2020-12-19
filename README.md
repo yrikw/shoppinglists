@@ -41,7 +41,7 @@ The application will add, delete or calculate by user's answer and show a messag
 4.  How many people?
  
 ## Error handling
-If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet insstead of numbers accidentally, the application let them know “Put the numbers.” and asks the same question again until they put any numbers. In menu 3) if the user try to delete the item which they have already deleted, the application also shows error message. The user can know easily what is the error. 
+If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet insstead of numbers accidentally, the application let them know “Enter a numbers.” and asks the same question again until they put any numbers. In menu 3) if the user try to delete the item which they have already deleted, the application also shows error message. The user can know easily what is the error. 
 
 # Develop a diagram which describes the control flow of your application. 
 
