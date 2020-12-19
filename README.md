@@ -107,7 +107,9 @@ Trello Board
 4. Open "src" folder: 
 ``` cd src ```
 5. Run the app: ruby: 
-``` ruby terminal_app.rb ```
+``` ruby index.rb (Your name) ```
+※Please enter your name in ()
+
 ## System/hardware requirements for this application
 - Command-line Interface
 - Ruby
