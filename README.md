@@ -32,6 +32,8 @@ After the user starts the application, below top menu shows up. The user needs t
 4. To split the total price
 5. Quit
 
+![exapmle1](docs/example1.png)
+
 ## How to interecat with / use each features
 Once the user selects menu, some questions come up and the user just need to answer the questions depending on what they need.
 The application will add, delete or calculate by user's answer and show a messages. Also, if the user adds many items in the list, they just need to type the item name, which helps them to efficiently add and delete items instead of scrolling and searching items in the list. 
@@ -39,6 +41,8 @@ The application will add, delete or calculate by user's answer and show a messag
 2.  Q1 Which item do you want to add? / Q2 How much is the price
 3.  Q1 Which item do you want to delete?
 4.  How many people?
+
+![exapmle2](docs/example2.png)
  
 ## Error handling
 If there is an unexpected error, the application shows “An unexpected error is occurred.” In red by using an error handling. Even if the error comes up, it doesn’t bother the user to use the application. They can continue to use the application. In menu 4), the application asks you “How many people?”, but the user put an alphabet insstead of numbers accidentally, the application let them know “Enter a numbers.” and asks the same question again until they put any numbers. In menu 3) if the user try to delete the item which they have already deleted, the application also shows error message. The user can know easily what is the error. 
